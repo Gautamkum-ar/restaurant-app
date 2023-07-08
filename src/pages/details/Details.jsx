@@ -9,7 +9,6 @@ import { useState } from "react";
 import { Addreview } from "../../component/addreview/Addreview";
 
 export const Details = () => {
-  const [toggleAdd, setToggleAdd] = useState(false);
   const navigate = useNavigate();
 
   const { restaurants } = useRestaurant();
@@ -24,12 +23,8 @@ export const Details = () => {
       <button className="back__btn" onClick={() => navigate("/")}>
         <FaArrowLeft />
       </button>
-      <RestroDetails
-        findRestaurant={findRestaurant}
-        setToggleAdd={setToggleAdd}
-      />
+      <RestroDetails findRestaurant={findRestaurant} />
       <Review findRestaurant={findRestaurant} />
-      {toggleAdd && <Addreview />}
     </div>
   );
 };

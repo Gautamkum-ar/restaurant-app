@@ -10,11 +10,61 @@ align-items: center;
     width: 100%;
 
 }
+.close{
+    display: flex;
+    border: none;
+    background:none;
+    position: absolute;
+    color: red;
+    top: 0;
+    top: 1rem;
+    left: 1rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.add__review h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+}
 
 .add__review{
     display: flex;
+    position: relative;
     flex-direction: column;
+    justify-content: space-around;
     width: 50%;
+ color: #fff;
     height: 50%;
     background: #333;
+}
+
+.ratingsss{
+    display: flex;
+    justify-content: space-around  ;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+}
+
+.comments{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin:0.4rem auto;
+    align-items: center;
+}
+
+
+.add__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 2rem;
+    border: none;
+    margin:1rem auto;
+    background: #999;
 }

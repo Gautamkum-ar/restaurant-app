@@ -1,6 +1,10 @@
+import { useState } from "react";
 import "../details/RestroDetail.css";
+import { Addreview } from "../addreview/Addreview";
 
-export const RestroDetails = ({ findRestaurant, setToggleAdd }) => {
+export const RestroDetails = ({ findRestaurant }) => {
+  const [toggleAdd, setToggleAdd] = useState(false);
+
   const { name, address, menu, averageRating } = findRestaurant;
   return (
     <div className="restro__details__container">
@@ -17,6 +21,12 @@ export const RestroDetails = ({ findRestaurant, setToggleAdd }) => {
       <div className="right">
         <button onClick={() => setToggleAdd(true)}>Add Review</button>
       </div>
+      {toggleAdd && (
+        <Addreview
+          findRestaurant={findRestaurant}
+          setToggleAdd={setToggleAdd}
+        />
+      )}
     </div>
   );
 };

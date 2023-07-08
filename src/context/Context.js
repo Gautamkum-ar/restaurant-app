@@ -13,9 +13,19 @@ export const ContextProvider = ({ children }) => {
     );
     setRestaurants(filterData);
   };
+
+  const handleAddReview = (data, restro) => {
+    const filter = restaurants.map((restaurant) =>
+      restaurant.id == restro.id
+        ? { ...restaurant, ratings: [...restaurant.ratings, data] }
+        : restaurant
+    );
+
+    setRestaurants(filter);
+  };
   return (
     <RestaurantContext.Provider
-      value={{ cuisines, showRestaurant, restaurants }}
+      value={{ cuisines, showRestaurant, restaurants, handleAddReview }}
     >
       {children}
     </RestaurantContext.Provider>
