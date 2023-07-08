@@ -1,0 +1,16 @@
+
+
+
+.restaurant__container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin:1rem auto;
+
+}
+
+.restaurant__container h1{
+    display: flex;
+    color: #444;
+    
+}

@@ -1,0 +1,40 @@
+
+.restro__details__container{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 2rem auto;
+    align-items: center;
+
+    padding: 1rem;
+    border-bottom: 1px solid #999;
+    
+}
+
+.restro__name{
+    display: flex;
+    color: #333;
+    font-size: 3rem;
+
+}
+
+.restro__menu{
+    display: flex;
+    color: #555;
+}
+
+.address,.avg__rating{
+    color: #666;
+}
+
+.right button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 2rem;
+    border: none;
+    background: #a81d1d;
+    color: #ffff;
+    border-radius: 5px;
+}

@@ -1,0 +1,20 @@
+
+.add__review__container{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+justify-content: center;
+align-items: center;
+    height: 100%;
+    width: 100%;
+
+}
+
+.add__review{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+    background: #333;
+}

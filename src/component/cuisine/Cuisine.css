@@ -1,0 +1,43 @@
+
+
+.cuisine__container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: 1rem;
+}
+
+.cuisine__container h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #444;
+}
+
+.cuisine__main{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.cuisine__main button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 2rem;
+    font-size: 1rem;
+    margin: 0.5rem;
+    background: #e64c44;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffff;
+    transition: 0.7s all;
+}
+
+.cuisine__main button:hover{
+    background: #360f0d;
+}
